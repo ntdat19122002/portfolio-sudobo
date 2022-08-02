@@ -107,6 +107,12 @@ table,td{
     margin-top: 40px;
 }
 
+.home-introduce button:hover{
+    background-color: #fff;
+    color: #754ef9;
+    border-color: #754ef9;
+}
+
 .home-picture img{
     width: 490px;
 }
