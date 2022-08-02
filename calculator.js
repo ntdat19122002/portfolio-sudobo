@@ -10,7 +10,7 @@ function insertNumber(number){
 function deleteAll(){
     myNumber.value='';
     result.innerHTML=0;
-    type = ''
+    type ='';
 }
 
 function deleteValue(){
