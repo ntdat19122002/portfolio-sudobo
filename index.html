@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Begin: Header -->
+        <div id="header">
+            <div class="nav-brand">
+                <a href="">Thanh Dat</a> 
+            </div>
+            <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#computor">Computor</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- End: Header -->
+
+        <!-- Begin: Home -->
+        <div id="home">
+            <div class="home-content row">
+                <div class="home-introduce col-lg-6">
+                    <h4>HELLO, I'M</h4>
+                    <h2 class="title">THÀNH ĐẠT</h2>
+                    <p>A Intern Developer</p>
+                    <button><a>MY WORK</a></button>
+                </div>
+                <div class="home-picture col-lg-6">
+                    <img src="./vit.jpg" alt="con vịt">
+                </div>
+            </div>
+        </div>
+        <!-- End: Home -->
+
+        <!-- Begin: Computor -->
+        <div id="computor">
+            <h2>My Computor</h2>
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" id="myNumber">
+                        <div id="result">0</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNumber(value)" value="1" >1</button></td>
+                    <td><button onclick="insertNumber(value)" value="2">2</button></td>
+                    <td><button onclick="insertNumber(value)" value="3">3</button></td>
+                    <td><button onclick="deleteAll()" >C</button></td>
+                    <td><button onclick="deleteValue(value)" >CE</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNumber(value)" value="4">4</button></td>
+                    <td><button onclick="insertNumber(value)" value="5">5</button></td>
+                    <td><button onclick="insertNumber(value)" value="6">6</button></td>
+                    <td><button onclick="add()">+</button></td>
+                    <td><button onclick="subtract()">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNumber(value)" value="7">7</button></td>
+                    <td><button onclick="insertNumber(value)" value="8">8</button></td>
+                    <td><button onclick="insertNumber(value)" value="9">9</button></td>
+                    <td><button onclick="multi()">*</button></td>
+                    <td><button onclick="divide()">/</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="insertNumber(value)" value="0">0</button></td>
+                    <td><button onclick="insertNumber(value)" value=".">.</button></td>
+                    <td><button onclick="equal()">=</button></td>
+                </tr>
+            </table>
+        </div>
+        <!-- End: Computor -->
+
+        <!-- Begin: Schedule -->
+        <div id="schedule">
+            <h2>My Schedule</h2>
+            <table>
+                <tr>
+                    <td>Shift</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Satuday</td>
+                    <td>Sunday</td>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td class="available"></td>
+                    <td class="available"></td>
+                    <td class="available"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Afternoon</td>
+                    <td class="available"></td>
+                    <td class="available"></td>
+                    <td class="available"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- End: Schedule -->
+
+        <!-- Begin: Contact -->
+        <div id="contact">
+            <h2>Get In Touch</h2>
+            <div class="info container">
+                <div class="row">
+                    <a href="https://www.facebook.com/nguyenthanhdat191202" class="col-md-4">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-phone"></i>
+                        Phone
+                        <h3>0888124154</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                        <h3>ntdat19122002@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Contact -->
+
+        <!-- Begin: Footer -->
+        <div id="footer">
+            <h3>Thanh Dat</h3>
+        </div>
+        <!-- End: Footer -->
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/3ec5aa8ff1.js" crossorigin="anonymous"></script>
+<script src="./calculator.js"></script>
+</html>
